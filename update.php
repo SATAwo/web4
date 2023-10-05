@@ -147,3 +147,45 @@
 							</div>
 							<div class="field-wrap">
 								<div class="form-field">
+									<label class="form-label" for="text">Текст:</label>
+									<textarea id="text" class="form-input" name="text" cols="30" rows="10"><?= $text ?></textarea>
+								</div>
+								<div class="error-container"><?php echo $textError ?></div>
+							</div>
+							<div class="form-field">
+								<span class="form-label">Дата последнего изменения:</span>
+								<span><?php echo $latest_edit_date ?></span>
+							</div>
+							<div class="form-field">
+								<span class="form-label">Дата текущего изменения:</span>
+								<span><?php echo $current_edit_date ?></span>
+							</div>
+							<div class="action-panel">
+								<input class="submit-btn" type="submit" value="Сохранить" />
+							</div>
+							<input type="hidden" value="<?= $id ?>" name="id"/>
+							<input type="hidden" value="<?= $current_edit_date ?>" name="editDate"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+    <!-- <form method="POST" action="update.php?id=<?= $id ?>">
+        Название поста: <input type="text" name="title" required value="<?= $title ?>" /><br />
+        Текст: <textarea name="text" cols="30" rows="10" required><?= $text ?></textarea><br />
+        Время последнего изменения: <?php echo $latest_edit_date ?><br />
+		Время текущего изменения: <?php echo $current_edit_date ?><br />
+		<input type="hidden" value="<?= $id ?>" name="id"/>
+		<input type="hidden" value="<?= $current_edit_date ?>" name="editDate"/>
+        <input type="submit" value="Сохранить" />
+    </form> -->
+</body>
+
+</html>
+								</div>
+								<div class="error-container"><?php echo $titleError ?></div>
+							</div>
+							<div class="field-wrap">
+								<div class="form-field">
