@@ -81,6 +81,20 @@ body {
     transition: all 0.3s ease;
 }
 
+.add-post {
+	font-size: 20px;
+    transition: all 0.3s ease;
+	background-color: #000;
+	color: #fff;
+	width: 100%;
+    padding: 15px 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+	margin-bottom: 20px;
+}
+
 .main-content {
     margin-bottom: 15px;
 }
@@ -114,11 +128,19 @@ body {
     width: 100%;
 }
 
+.blog-link {
+	display: block;
+	margin-bottom: 15px;
+	text-decoration: none;
+	color: #000;
+}
+
 .blog-item {
     padding: 15px;
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
+    background-color: #bd4d4d;
     border: 2px solid black;
 }
 
@@ -232,6 +254,68 @@ body {
     object-fit: contain;
 }
 
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.form-wrap {
+	max-width: 600px;
+	width: 100%;
+}
+
+.field-wrap {
+	margin-bottom: 10px;
+}
+
+.form-field {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.form-field textarea,
+.form-field input {
+	font-size: 20px;
+}
+
+.form-label {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.form-input {
+	width: 70%;
+	border: 1px solid #000;
+	border-radius: 10px;
+	resize: none;
+	padding: 5px;
+}
+
+.action-panel {
+	display: flex;
+	justify-content: center;
+}
+
+.submit-btn {
+	padding: 15px;
+	cursor: pointer;
+	background-color: #bd4d4d;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.error-container {
+	width: 100%;
+	text-align: center;
+	color: #fc0505;
+}
+
 @media (min-width: 768px) {
 
     .nav-link {
@@ -245,7 +329,7 @@ body {
 
 
     .blog-img {
-        width: 400px;
+        width: 300px;
     }
 
     .actions {
