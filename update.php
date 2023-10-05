@@ -184,8 +184,3 @@
 </body>
 
 </html>
-								</div>
-								<div class="error-container"><?php echo $titleError ?></div>
-							</div>
-							<div class="field-wrap">
-								<div class="form-field">
